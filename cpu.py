@@ -23,9 +23,9 @@ class CPU:
             "JEQ": 0b01010101,
         }
         self.fl = {
-            "E": 0,  # Equal
-            "L": 0,  # Less than
-            "G": 0,  # Greater than
+            "E": 0,
+            "L": 0,
+            "G": 0,
         }
     def load(self):
         address = 0
@@ -157,10 +157,6 @@ class CPU:
                 print(f'Unknown action: {(action)}')
                 self.pc += 1
             
-
-
-
-
 cpu = CPU()
 cpu.load()
 cpu.run()
